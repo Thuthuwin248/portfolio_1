@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9a41f07fd6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="home">
+        <header>
+            <nav class="side-bar">
+                <i onclick="hideSidebar()" class="fa-solid fa-xmark"></i>
+                <a href="#home">Home</a> 
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <nav>
+                <div class="left">
+                    <h1>PORTFOLIO</h1>
+                </div>
+                <div class="right">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <i onclick="showSidebar()" class="fa-solid fa-bars"></i>
+            </nav>
+        </header>
+    
+        <div class="inner-home">
+            <div class="detail">
+                <div class="content">
+                    <h1>Hi, I'm<br> Thu Thu Win</h1>
+                    <p>This is my portfolio website</p>
+                    <button><a href="#about">ABOUT ME</a></button>
+                </div>
+                <img src="img/girl.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <hr>
+        <h1>About Me</h1>
+        <h5>Who I am</h5>
+        <div class="inner-about">
+            <div class="abt-me">
+                <img src="img/about-me.png" alt="">
+                <div class="intro">
+                    <h2>My name is Thu Thu Win and I'm a Web Developer</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <hr>
+        <h1>My Services</h1>
+        <h5>What I provide</h5>
+        <div class="container">
+            <div class="one">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos repellat repudiandae praesentium fuga delectus dolorum voluptatibus commodi, doloremque molestias dolorem dolores omnis quasi dolor recusandae sed! Velit, labore tempore.</p>
+            </div>
+            <div class="two">
+                <i class="fa-solid fa-filter-circle-dollar"></i>
+                <h2>Advertising</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos repellat repudiandae praesentium fuga delectus dolorum voluptatibus commodi, doloremque molestias dolorem dolores omnis quasi dolor recusandae sed! Velit, labore tempore.</p>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-paintbrush"></i>
+                <h2>Graphic Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos repellat repudiandae praesentium fuga delectus dolorum voluptatibus commodi, doloremque molestias dolorem dolores omnis quasi dolor recusandae sed! Velit, labore tempore.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <hr>
+        <h1>Contact Me</h1>
+        <h5>Get in touch</h5>
+        <div class="inner-contact-container">
+            <div class="inner-contact">
+                <div class="git">
+                    <h2>Get in Touch</h2>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Iure cumque fugiat suscipit exercitationem repellat doloremque<br> illum recusandae dolore debitis ducimus quo provident nisi quam,<br> consectetur enim animi amet voluptas saepe.</p>
+                    
+                    <div class="inner-git">
+                        <div class="name">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="inner-name">
+                                <h3>Name</h3>
+                                <p class="ttw">Thu Thu Win</p>
+                            </div>
+                        </div>
+                        
+                        <div class="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="inner-address">
+                                <h3>Address</h3>
+                                <p class="ygn">Yangon, Myanmar</p>
+                            </div>
+                        </div>
+        
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="inner-email">
+                                <h3>Email</h3>
+                                <p class="thu">thuthuwin583@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="mm">
+                    <h2 class="msg-me">Message me</h2>
+                    <input type="text" class="input-name" placeholder="Name">
+                    <input type="email" class="input-email" placeholder="Email"><br>
+                    <input type="text" class="input-subject" placeholder="Subject"><br>
+                    <textarea placeholder="Describe project"></textarea>
+                    <button>Send Message</button>
+                </div> 
+                  
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <h3>Created by Thu Thu Win | &copy;2024 All right reserved</h3>
+        <i class="fa-brands fa-facebook"></i> 
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

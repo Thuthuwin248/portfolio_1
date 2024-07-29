@@ -1,0 +1,320 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: cornsilk;
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cornsilk;
+}
+
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.side-bar i{
+    font-size: 30px;
+    align-self: flex-end;
+    margin: 18px 18px 0 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.inner-home{
+    margin: 0 auto;
+}
+
+.detail{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 12% 50px 12%;
+}
+
+.detail .content{   
+    display: inline-block;
+    width: 50%;
+    margin-top: 9%;
+}
+
+.detail .img{
+    display: inline-block;
+    width: 50%;
+}
+
+.detail h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #212121;
+}
+
+.detail button{
+    background-color: #212121;
+    padding: 10px 18px;
+    margin: 5px 0px;
+    font-weight: bold;
+    color: #fff;
+    border-radius:20px;
+    border: none;
+}
+
+.detail a{
+    text-decoration: none;
+    color:#fff;
+}
+
+nav .fa-bars{
+    font-size: 18px;
+    display: none;
+}
+
+#about hr{
+    margin: 80px 0;
+}
+
+#about h1, #about h5{
+    text-align: center;
+    margin: 0;
+}
+
+.inner-about{
+    margin: 0 auto;
+}
+
+.abt-me{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10% 50px 10%;
+}
+
+.abt-me img{
+    display: inline-block;
+    width: 50%;
+}
+
+.intro{
+    display: inline-block;
+    width: 50%;
+    margin-top: 8%;
+}
+
+.intro p{
+    font-size: 20px;
+}
+
+#about button{
+    background-color: #212121;
+    padding: 10px 18px;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border-radius:10px;
+    border: none;
+}
+
+#services hr{
+    margin: 80px 0;
+}
+
+#services h1, #services h5{
+    text-align: center;
+    margin: 0;
+}
+
+.inner-services{
+    margin: 0 auto;
+}
+
+#services .container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); */
+    color: white;
+    justify-content: space-around;
+    row-gap: 15px;
+    margin: 35px;
+}
+
+.one, .two, .three{
+    width: 250px;
+    height: 325px;
+    background-color: #212121;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.container i{
+    font-size: 40px;
+} 
+
+.container p{
+    font-size: 18px;
+}
+
+#contact hr{
+    margin: 80px 0;
+}
+
+#contact h1, #contact h5{
+    text-align: center;
+    margin: 0;
+}
+
+.inner-contact{
+    margin: 50px 12%; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.git, .mm{
+    width: 50%;
+}
+
+.inner-contact i{
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.inner-contact .para{
+    font-size: 20px;
+    margin: 0 50px 20px 0;
+}
+
+.inner-git h3, .inner-git p{
+    margin: 0;
+}
+
+.name, .address, .email{
+    display: flex;
+}
+
+.inner-name, .inner-address, .inner-email{
+    margin: 0 0 8px 8px;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(215, 214, 214);
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+
+.input-name, .input-email{
+    width: 200px;
+}
+
+.input-subject{
+    width: 416px;
+}
+
+textarea{
+    width: 410px;
+    height: 50px;
+    background-color: rgb(215, 214, 214);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#contact button{
+    background-color: rgb(42, 42, 42);
+    padding: 10px 18px;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border-radius:10px;
+    border: none;
+}
+
+footer{
+    text-align: center;
+}
+
+footer h3{
+    margin: 0;
+}
+
+footer i{
+    margin: 0 2px 15px 2px;
+}
+
+@media (max-width: 600px){
+    nav .right{
+        display: none;
+    }
+
+    nav .fa-bars{
+        display: block;
+    }
+
+    .inner-home .content, .inner-home img{
+        width: 100%;
+    }
+
+    .abt-me img, .intro{
+        width: 100%;
+    }
+
+    .abt-me p, .git p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    #services .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .one, .two, .three{
+        margin: 0 auto;
+    }
+
+    .git, .mm{
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px){
+    .inner-contact-container{
+        margin: 0 auto;
+    }
+}
