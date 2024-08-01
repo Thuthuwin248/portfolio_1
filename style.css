@@ -57,7 +57,7 @@ nav a{
 .detail{
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 8% 0 16%;
+    padding: 60px 8% 0 16%;
 }
 
 .detail .content{   
@@ -278,6 +278,10 @@ footer i{
 }
 
 @media screen and (max-width: 600px){
+    /* .detail{
+        padding-top: 18%;
+    } */
+
     nav .right{
         display: none;
     }
